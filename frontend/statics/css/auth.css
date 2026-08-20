@@ -306,9 +306,8 @@ input {
     margin-bottom: 20px;
 
     font-size:
-        clamp(32px, 4vw, 48px);
-
-    line-height: 1.08;
+        clamp(32px, 4vw, 28px) ;
+       line-height: 1.08;
 
     letter-spacing: -1.8px;
 
@@ -513,7 +512,7 @@ input {
 
     gap: 26px;
 
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 
     border-bottom:
         1px solid
@@ -571,7 +570,7 @@ input {
         left center;
 
     transition:
-        transform .3s ease;
+        transform .6s ease;
 }
 
 .auth-tab.active {
@@ -638,7 +637,8 @@ input {
     gap: 14px;
 }
 
-.form-group {
+
+.oup {
     display: flex;
 
     flex-direction: column;
@@ -646,12 +646,16 @@ input {
     gap: 6px;
 }
 
+
 .form-group label {
     color: #d8cedf;
 
-    font-size: 11px;
-
+    font-size: 14px;
+    position: relative;
+    left: 4px;
+    position: relative;
     font-weight: 600;
+    margin-bottom: 3px;
 }
 
 
@@ -758,14 +762,18 @@ input {
    PASSWORD
 ========================================================= */
 
-.password-input {
+.nput {
     position: relative;
 }
 
 .password-input input {
     padding-right: 45px;
 }
-
+.login-card.register-mode .form-group label[for="fullName"],
+.login-card.register-mode .form-group label[for="username"],
+.login-card.register-mode .form-group label[for="password"] {
+    font-size: 14px;
+}
 
 /* =========================================================
    PASSWORD TOGGLE
@@ -956,12 +964,16 @@ input {
     display: none;
 }
 
+
+
 .register-field.show {
-    display: flex;
+     display: flex;
+     
 
     animation:
         fieldAppear
         .25s ease both;
+        flex-direction: column;
 }
 
 @keyframes fieldAppear {
@@ -2181,7 +2193,7 @@ body {
 
 .holirex-credit {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 18px;
     text-align: center;
     color: #62576a;
     font-size: 8px;
