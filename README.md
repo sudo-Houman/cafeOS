@@ -1,2 +1,0 @@
-# cafeOS
-cafe-system-manage
