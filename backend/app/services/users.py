@@ -14,7 +14,7 @@ def create_user(db: Session, user: UserCreate):
     new_user = User(
         username=user.username,
         password=user.password,
-        fullname=user.fullname,
+        fullname=user.fullname,  # اینجا fullname هست
         role=user.role if user.role else "BARISTA"
     )
     db.add(new_user)
